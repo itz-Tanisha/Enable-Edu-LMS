@@ -1,4 +1,4 @@
-### ENABLE EDU - An LMS Platform : Next.js 13,  React, Stripe, Mux, Prisma, Tailwind, MongoDB 
+### ENABLE EDU - A LMS Platform : Next.js 13,  React, Stripe, Mux, Prisma, Tailwind, MongoDB 
 
 This is a repository for my EPICS ( Engineering Project in Community Service ) Project titled "Enable Edu" (2023 - 2024)
 
