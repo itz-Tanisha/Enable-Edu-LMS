@@ -1,3 +1,5 @@
+"use client";
+
 import { Category } from "@prisma/client";
 import { IconType } from "react-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
