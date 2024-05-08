@@ -19,10 +19,10 @@ interface CategoriesProps {
 }
 
 const iconMap: Record<Category["name"], IconType> = {
-  "Accessible Mathematics": FcMusic,
-  "Adaptive Science": FcOldTimeCamera,
-  "Inclusive Language Arts": FcSportsMode,
-  "Adapted Physical Education": FcSalesPerformance,
+  "Accessible Mathematics": FcSalesPerformance,
+  "Adaptive Science": FcEngineering,
+  "Inclusive Language Arts": FcEngineering,
+  "Adapted Physical Education": FcSportsMode,
   "Digital Literacy and Computer Science": FcMultipleDevices,
 };
 
