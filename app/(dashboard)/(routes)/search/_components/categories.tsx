@@ -1,14 +1,15 @@
+"use client";
+
 import { Category } from "@prisma/client";
 import {
-  FaRegLightbulb,
-  FaRegKeyboard,
-  FaRegNewspaper,
-  FaRegHeart,
-  FaRegStar,
-  FaRegUser,
-  FaRegPlayCircle
-} from "react-icons/fa";
+  FcMultipleDevices,
+  FcSalesPerformance,
+  FcSportsMode,
+  FcScience, 
+  FcBook,
+} from "react-icons/fc";
 import { IconType } from "react-icons";
+
 import { CategoryItem } from "./category-item";
 
 interface CategoriesProps {
@@ -16,11 +17,11 @@ interface CategoriesProps {
 }
 
 const iconMap: Record<Category["name"], IconType> = {
-  "Accessible Mathematics": FaRegStar,
-  "Adaptive Science": FaRegLightbulb,
-  "Inclusive Language Arts": FaRegKeyboard,
-  "Adapted Physical Education": FaRegHeart,
-  "Digital Literacy and Computer Science": FaRegUser,
+  "Accessible Mathematics": FcSalesPerformance,
+  "Adaptive Science": FcScience, 
+  "Inclusive Language Arts": FcBook, 
+  "Adapted Physical Education": FcSportsMode,
+  "Digital Literacy and Computer Science": FcMultipleDevices,
 };
 
 export const Categories = ({
