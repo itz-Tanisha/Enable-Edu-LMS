@@ -2,14 +2,13 @@
 
 import { Category } from "@prisma/client";
 import { IconType } from "react-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
-  faChartLine, 
-  faAtom, 
-  faLanguage, 
-  faRunning, 
-  faDesktop 
-} from "@fortawesome/free-solid-svg-icons";
+  FcLineChart, 
+  FcScience, 
+  FcReading, 
+  FcSportsClub, 
+  FcTechnology 
+} from "react-icons/fc";
 
 import { CategoryItem } from "./category-item";
 
@@ -18,11 +17,11 @@ interface CategoriesProps {
 }
 
 const iconMap: Record<Category["name"], IconType> = {
-  "Accessible Mathematics": faChartLine,
-  "Adaptive Science": faAtom,
-  "Inclusive Language Arts": faLanguage,
-  "Adapted Physical Education": faRunning,
-  "Digital Literacy and Computer Science": faDesktop,
+  "Accessible Mathematics": FcLineChart, // Line chart for mathematics
+  "Adaptive Science": FcScience, // Science flask for science
+  "Inclusive Language Arts": FcReading, // Book for language arts
+  "Adapted Physical Education": FcSportsClub, // Sports club for physical education
+  "Digital Literacy and Computer Science": FcTechnology, // Technology icon for computer science
 };
 
 export const Categories = ({
@@ -34,7 +33,7 @@ export const Categories = ({
         <CategoryItem
           key={item.id}
           label={item.name}
-          icon={<FontAwesomeIcon icon={iconMap[item.name]} />}
+          icon={iconMap[item.name]}
           value={item.id}
         />
       ))}
